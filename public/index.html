@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="%LANG_ISO_CODE%">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <title>%WEB_TITLE% · Habit tracker (concept app)</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <style id="expo-reset">
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        overflow: hidden;
+        margin: 0;
+        background-color: #f7e6f3;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #0d0a11;
+        }
+      }
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+      /* Keyboard focus is always visible; pointer focus stays quiet. */
+      :focus:not(:focus-visible) {
+        outline: none;
+      }
+      :focus-visible {
+        outline: 2.5px solid var(--focus-ring, #1c1424);
+        outline-offset: 2px;
+      }
+      /* Screen titles take focus after navigation (so screen readers start there); no ring on them. */
+      h1[tabindex="-1"]:focus,
+      h2[tabindex="-1"]:focus {
+        outline: none;
+      }
+      input:focus-visible,
+      textarea:focus-visible {
+        outline: none;
+      }
+      ::selection {
+        background: rgba(255, 107, 53, 0.28);
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+      /* Thin, quiet scrollbars inside the phone column on desktop. */
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(120, 100, 130, 0.35) transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>Everwick is an interactive concept app. Please enable JavaScript to try it.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

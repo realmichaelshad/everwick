@@ -1,0 +1,75 @@
+{
+  "expo": {
+    "name": "Everwick",
+    "slug": "everwick",
+    "version": "1.0.0",
+    "description": "Everwick is a concept habit and fitness tracker (fictional brand): daily check-ins, streaks with freezes, progress charts and insights, all stored on the device.",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "everwick",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#FFF7F2",
+    "primaryColor": "#FF6B35",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.example.everwick",
+      "buildNumber": "1",
+      "config": { "usesNonExemptEncryption": false },
+      "infoPlist": {
+        "CFBundleDisplayName": "Everwick"
+      }
+    },
+    "android": {
+      "package": "com.example.everwick",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#FFF7F2",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": ["android.permission.POST_NOTIFICATIONS", "android.permission.VIBRATE"]
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/images/favicon.png",
+      "name": "Everwick",
+      "shortName": "Everwick",
+      "description": "Everwick is a concept habit and fitness tracker app (fictional brand).",
+      "themeColor": "#FFF7F2",
+      "backgroundColor": "#FFF7F2"
+    },
+    "plugins": [
+      ["expo-router", { "asyncRoutes": { "web": false } }],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 120,
+          "resizeMode": "contain",
+          "backgroundColor": "#FFF7F2",
+          "dark": {
+            "image": "./assets/images/splash-icon.png",
+            "backgroundColor": "#120D16"
+          }
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/android-icon-monochrome.png",
+          "color": "#FF6B35"
+        }
+      ],
+      "expo-font",
+      "expo-sharing",
+      "expo-web-browser",
+      "expo-status-bar",
+      "expo-image"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

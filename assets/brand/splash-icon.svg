@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><defs>
+  <linearGradient id="flame" x1="0.25" y1="1" x2="0.7" y2="0">
+    <stop offset="0" stop-color="#FFB547"/>
+    <stop offset="0.6" stop-color="#FF7A3A"/>
+    <stop offset="1" stop-color="#FF6B35"/>
+  </linearGradient>
+  <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFAF6"/>
+    <stop offset="1" stop-color="#FFEADC"/>
+  </linearGradient>
+  <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#FFB547" stop-opacity="0.4"/>
+    <stop offset="0.5" stop-color="#FFB547" stop-opacity="0.14"/>
+    <stop offset="1" stop-color="#FFB547" stop-opacity="0"/>
+  </radialGradient></defs><g transform="translate(128 128) scale(12)">
+    <path d="M41 2.5 C 38.5 9.5 50.5 20 50.5 38.5 A 18.5 18.5 0 0 1 13.5 38.5 C 13.5 28 22 22 27 15.5 C 31 10.5 37 8 41 2.5 Z" fill="url(#flame)"/><path d="M34 27 C 36.5 32 40 36 40 42 A 8 8 0 0 1 24 42 C 24 36.5 29.5 32.5 34 27 Z" fill="#FFE7B0"/>
+    <path d="M32 55.5 L32 61.5" stroke="#1C1424" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g></svg>
